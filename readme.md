@@ -8,7 +8,7 @@ I often find myself needing to store extra bits of information across entities i
 
 Instead of expanding my database with new fields across multiple entities, I often resort back to a simple `key value table` that has a `polymorphic relationship` to any entity.
 
-This package provides you with that table and `trait` you can add to your models to implement the functionality.
+This package provides you with that table and a `trait` that you can add to your models to implement the functionality.
 
 ## Installation
 
