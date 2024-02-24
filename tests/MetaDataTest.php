@@ -1,6 +1,7 @@
 <?php namespace DigitalRuby\MetaData\Tests;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Schema;
 use Tests\TestCase;
 
 class MetaDataTest extends TestCase
@@ -11,7 +12,8 @@ class MetaDataTest extends TestCase
     {
         parent::setUp();
 
-        \Illuminate\Support\Facades\Schema::create('test_models', function ($table) {
+        Schema::dropIfExists('test_models');
+        Schema::create('test_models', function ($table) {
             $table->id();
             $table->string('name');
             $table->timestamps();
@@ -20,7 +22,7 @@ class MetaDataTest extends TestCase
 
     public function getMockModel(): Model
     {
-        $model = new class extends \Illuminate\Database\Eloquent\Model {
+        $model = new class extends Model {
             use \DigitalRuby\MetaData\HasMetaData;
 
             protected $table = 'test_models';
