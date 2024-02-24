@@ -1,0 +1,8 @@
+<phpunit>
+    <php>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="APP_ENV" value="testing"/>
+        <!-- Any other configuration specific to your package testing -->
+    </php>
+</phpunit>

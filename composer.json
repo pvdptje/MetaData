@@ -1,0 +1,32 @@
+{
+    "name": "digitalruby/meta-data",
+    "description": "Adds a flexible key/value table to your Laravel models",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick van der Pols",
+            "email": "patrick@digitalruby.nl"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalRuby\\MetaData\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DigitalRuby\\MetaData\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DigitalRuby\\MetaData\\MetaDataServiceProvider"
+            ]
+        }
+    }
+}
