@@ -84,7 +84,7 @@ This command creates the necessary table for storing meta data related to your m
 ## Requirements
 
 - PHP 8 or higher
-- Laravel 8.0 or higher
+- Laravel 10 or higher
 
 ## Contributing
 
