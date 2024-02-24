@@ -9,6 +9,5 @@ class MetaData extends Model {
     public function entity()
     {
         return $this->morphTo();
-    }
-    
+    }    
 }
